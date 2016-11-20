@@ -1,0 +1,3 @@
+[submodule "ext/syntect/syntect"]
+	path = ext/syntect/syntect
+	url = git@github.com:trishume/syntect.git

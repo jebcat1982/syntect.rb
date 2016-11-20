@@ -1,0 +1,33 @@
+[package]
+name = "syntect"
+description = "library for high quality syntax highlighting and code intelligence using Sublime Text's grammars"
+documentation = "http://thume.ca/rustdoc/syntect/syntect/"
+repository = "https://github.com/trishume/syntect"
+keywords = ["syntax", "highlighting", "highlighter", "colouring", "parsing"]
+readme = "Readme.md"
+license = "MIT"
+version = "1.0.1"
+authors = ["Tristan Hume <tristan@thume.ca>"]
+exclude = [
+    "testdata/*",
+]
+
+[lib]
+name = "syntect"
+crate-type = ["staticlib"]
+
+[dependencies]
+yaml-rust = "0.3"
+onig = "1.1.0"
+walkdir = "0.1"
+regex-syntax = "0.3.3"
+lazy_static = "0.2.1"
+bitflags = "0.7"
+plist = "0.0.14"
+rustc-serialize = "0.3"
+bincode = "0.6"
+flate2 = "0.2"
+fnv = "1.0.2"
+
+# [profile.release]
+# debug = true
