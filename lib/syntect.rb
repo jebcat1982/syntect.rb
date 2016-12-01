@@ -9,9 +9,3 @@ end
 begin
   require 'awesome_print'
 rescue LoadError; end
-
-module Syntect
-  def self.higlight(text)
-
-  end
-end
