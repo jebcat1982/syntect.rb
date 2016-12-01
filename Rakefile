@@ -13,13 +13,6 @@ Rake::ExtensionTask.new('syntect', gem_spec) do |ext|
   ext.lib_dir = File.join('lib', 'syntect')
 end
 
-Rake::Task['clean'].enhance do
-  ext_dir = File.join(File.dirname(__FILE__), 'ext', 'syntect', 'syntect')
-  Dir.chdir(ext_dir) do
-    `cargo clean`
-  end
-end
-
 # Testing
 require 'rake/testtask'
 
