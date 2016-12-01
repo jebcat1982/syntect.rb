@@ -1,7 +1,7 @@
-# coding: utf-8
 require 'syntect'
 require 'minitest/autorun'
 require 'minitest/pride'
+require 'linguist/grammars'
 
 include Syntect
 
